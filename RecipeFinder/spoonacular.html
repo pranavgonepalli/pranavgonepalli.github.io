@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+</head>
+<body>
+    <div id="blob"></div>
+    <div style="position: fixed; left: 20vw; top: 8vh; width: 20%; top: 50%; transform: translateY(-50%);">
+        <!-- <h1>Recipe Finder</h1> -->
+        <div class="form-style-5">
+            <form>
+                <fieldset>
+                    <legend style="font-weight: 700"><span class="number">1</span> Recipe Finder</legend>
+                    <input id="search" type="text" name="field1" placeholder="Ingredients" autocomplete="off">
+                    <input id="numRecipes" type="number" name="field2" min="0" max="9" placeholder="Number of Recipes (1 - 9)">
+                    <select id="ranking" name="field3">
+                        <option value="1">Maximize Used Ingredients</option>
+                        <option value="2">Minimize Missing Ingredients</option>
+                    </select> 
+                    <input type="button" value="Search" onclick="getRecipe(document.getElementById('search').value)"/>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <div id="grid" class="grid-container">
+        <ul class="cards">
+            <li class="cards_item" id="recipe1" style="display:none">
+              <div class="card">
+                <a id="source1" href=""></a>
+                <div class="card_image"><img id="img1" src="https://assets.codepen.io/652/photo-1468777675496-5782faaea55b.jpeg"></div>
+                <div class="card_content">
+                  <h2 class="card_title" id="title1"></h2>
+                  <div class="card_text">
+                  </div>
+                </div>
+              </div>
+            </li>
+        
+            <li class="cards_item" id="recipe2" style="display:none">
+              <div class="card">
+                <a id="source2" href=""></a>
+                <div class="card_image"><img id="img2" src="https://assets.codepen.io/652/photo-1520174691701-bc555a3404ca.jpeg"></div>
+                <div class="card_content">
+                  <h2 class="card_title" id="title2"></h2>
+                  <div class="card_text">
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="cards_item" id="recipe3" style="display:none">
+              <div class="card">
+                <a id="source3" href=""></a>
+                <div class="card_image"><img id="img3" src="https://assets.codepen.io/652/photo-1544510808-91bcbee1df55.jpeg"></div>
+                <div class="card_content">
+                  <h2 class="card_title" id="title3"></h2>
+                  <div class="card_text">
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="cards_item" id="recipe4" style="display:none">
+                <div class="card">
+                  <a id="source4" href=""></a>
+                  <div class="card_image"><img id="img4" src="https://assets.codepen.io/652/photo-1468777675496-5782faaea55b.jpeg"></div>
+                  <div class="card_content">
+                    <h2 class="card_title" id="title4"></h2>
+                    <div class="card_text">
+                    </div>
+                  </div>
+                </div>
+              </li>
+          
+              <li class="cards_item" id="recipe5" style="display:none">
+                <div class="card">
+                  <a id="source5" href=""></a>
+                  <div class="card_image"><img id="img5" src="https://assets.codepen.io/652/photo-1520174691701-bc555a3404ca.jpeg"></div>
+                  <div class="card_content">
+                    <h2 class="card_title" id="title5"></h2>
+                    <div class="card_text">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              
+              <li class="cards_item" id="recipe6" style="display:none">
+                <div class="card">
+                  <a id="source6" href=""></a>
+                  <div class="card_image"><img id="img6" src="https://assets.codepen.io/652/photo-1544510808-91bcbee1df55.jpeg"></div>
+                  <div class="card_content">
+                    <h2 class="card_title" id="title6"></h2>
+                    <div class="card_text">
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="cards_item" id="recipe7" style="display:none">
+                <div class="card">
+                  <a id="source7" href=""></a>
+                  <div class="card_image"><img id="img7" src="https://assets.codepen.io/652/photo-1468777675496-5782faaea55b.jpeg"></div>
+                  <div class="card_content">
+                    <h2 class="card_title" id="title7"></h2>
+                    <div class="card_text">
+                    </div>
+                  </div>
+                </div>
+              </li>
+          
+              <li class="cards_item" id="recipe8" style="display:none">
+                <div class="card">
+                  <a id="source8" href=""></a>
+                  <div class="card_image"><img id="img8" src="https://assets.codepen.io/652/photo-1520174691701-bc555a3404ca.jpeg"></div>
+                  <div class="card_content">
+                    <h2 class="card_title" id="title8"></h2>
+                    <div class="card_text">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              
+              <li class="cards_item" id="recipe9" style="display:none">
+                <div class="card">
+                  <a id="source9" href=""></a>
+                  <div class="card_image"><img id="img9" src="https://assets.codepen.io/652/photo-1544510808-91bcbee1df55.jpeg"></div>
+                  <div class="card_content">
+                    <h2 class="card_title" id="title9"></h2>
+                    <div class="card_text">
+                    </div>
+                  </div>
+                </div>
+              </li>
+          </ul>
+        <!-- <div id="recipe1" style="display:none" class="grid-item card hidden">
+            <img id="img1" src="" width="100%"/>
+            <div class="container">
+                <h4 id="title1"><b></b></h4>
+                <a id="source1" href=""></a>
+            </div>
+        </div>
+        <div id="recipe2" style="display:none" class="grid-item card hidden">
+            <img id="img2" src="" width="100%"/>
+            <div class="container">
+                <h4 id="title2"><b></b></h4>
+                <a id="source2" href=""></a>
+            </div>
+        </div>
+        <div id="recipe3" style="display:none" class="grid-item card hidden">
+            <img id="img3" src="" width="100%"/>
+            <div class="container">
+                <h4 id="title3"><b></b></h4>
+                <a id="source3" href=""></a>
+            </div>
+        </div>
+        <div id="recipe4" style="display:none" class="grid-item card hidden">
+            <img id="img4" src="" width="100%"/>
+            <div class="container">
+                <h4 id="title4"><b></b></h4>
+                <a id="source4" href=""></a>
+            </div>
+        </div>
+        <div id="recipe5" style="display:none" class="grid-item card hidden">
+            <img id="img5" src="" width="100%"/>
+            <div class="container">
+                <h4 id="title5"><b></b></h4>
+                <a id="source5" href=""></a>
+            </div>
+        </div>
+        <div id="recipe6" style="display:none" class="grid-item card hidden">
+            <img id="img6" src="" width="100%"/>
+            <div class="container">
+                <h4 id="title6"><b></b></h4>
+                <a id="source6" href=""></a>
+            </div>
+        </div>
+        <div id="recipe7" style="display:none" class="grid-item card hidden">
+            <img id="img7" src="" width="100%"/>
+            <div class="container">
+                <h4 id="title7"><b></b></h4>
+                <a id="source7" href=""></a>
+            </div>
+        </div>
+        <div id="recipe8" style="display:none" class="grid-item card hidden">
+            <img id="img8" src="" width="100%"/>
+            <div class="container">
+                <h4 id="title8"><b></b></h4>
+                <a id="source8" href=""></a>
+            </div>
+        </div>
+        <div id="recipe9" style="display:none" class="grid-item card hidden">
+            <img id="img9" src="" width="100%"/>
+            <div class="container">
+                <h4 id="title9"><b></b></h4>
+                <a id="source9" href=""></a>
+            </div>
+        </div> -->
+    </div>
+</body>
+</html>
