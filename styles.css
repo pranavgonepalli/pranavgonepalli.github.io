@@ -55,7 +55,71 @@ body {
 #about {
     border-top: 1px solid lightgray;
     padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
 }
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-text {
+    width: 50%;
+}
+
+.image-container {
+    width: 40%;  /* Adjust this value to your desired size */
+    height: 40%; /* This should be the same as the width */
+    overflow: hidden;
+    border-radius: 10%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex; /* Add this line */
+    align-items: center; /* Add this line */
+    justify-content: center; /* Add this line */
+}
+
+.image-desktop {
+    display: flex;
+}
+
+.image-mobile {
+    display: none;
+}
+
+#me-image {
+    width: 120%;
+    height: 120%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    #about {
+        gap: 2rem;
+    }
+    .about-text {
+        width: 100%;
+    }
+
+    .image-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .image-desktop {
+        display: none;
+    }
+
+    .image-mobile {
+        display: flex;
+    }
+}
+
 
 #experience {
     display: flex;
