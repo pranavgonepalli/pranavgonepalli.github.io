@@ -94,6 +94,26 @@ body {
     margin-right: 20px;
 }
 
+.desktop-logo {
+    display: block;
+}
+
+.mobile-logo {
+    margin-left: auto;
+    display: none;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    .desktop-logo {
+        display: none;
+    }
+
+    .mobile-logo {
+        display: block;
+    }
+}
+
 .card-intro {
     display: flex;
     flex-direction: column;
