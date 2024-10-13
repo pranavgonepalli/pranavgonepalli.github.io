@@ -3,9 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Pranav's Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <title>Pranav Gonepalli</title>
 </head>
 <body>
-    Hello World!
+    <div id="nav-bar">
+        <a href="#main_container">PG</a>
+        <a href="#about" style="margin-left: auto;">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact_me">Contact Me</a>
+    </div>
+    <div id="main_container">
+        <div id="intro">
+            <div style="display: flex; flex-direction: column; gap: 0rem;">
+                <h1>Hello, I'm Pranav.</h1>
+                <h3 style="margin-top: -1rem;">A software engineer that enjoys building things.</h3>
+            </div>
+            <p style="font-size: 1.2rem;">
+                Welcome to my website! Take a look around to see the projects I've worked on, 
+                the skills I've developed, and what I've been up to recently.
+            </p>
+        </div>
+        <!-- <span class="section-anchor" id="about-anchor"></span> -->
+        <div id="about">
+            <h2>About Me</h2>
+        </div>
+        <div id="experience">
+            <h2>Experience</h2>
+            <div class="experience-card">
+                <img src="images/microstrategy_logo.png" alt="Company Logo" class="company-logo">
+                <div class="card-content">
+                    <div class="card-intro">
+                        <h3 class="company-name">MicroStrategy</h3>
+                        <p class="job-role">Software Engineer Intern</p>
+                    </div>
+                    <p class="date-location">May 2024 - Aug 2024 | Tysons, VA</p>
+                    <p>
+                        Developed a natural language chatbot for Auto Dashboard using React, Node.js, and OpenAI, 
+                        enabling automated dashboard creation. Built features like multi-page generation, dynamic 
+                        layouts, and design customization, cutting creation time by 90%.
+                    </p>
+                </div>
+            </div>
+            <div class="experience-card">
+                <img src="images/ibm_logo.webp" alt="Company Logo" class="company-logo">
+                <div class="card-content">
+                    <div class="card-intro">
+                        <h3 class="company-name">IBM</h3>
+                        <p class="job-role">Software Engineer Intern</p>
+                    </div>
+                    <p class="date-location">Oct 2023 - Dec 2023 | Washington, D.C.</p>
+                    <p>
+                        Used AWS Lambda and Docker to efficiently extract and manage JSON data from Hyperscience documents. 
+                        Developed a script to analyze 52,000+ JSON files, reducing processing time from months to minutes.
+                    </p>
+                </div>
+            </div>
+            <div class="experience-card">
+                <img src="images/disinfolab_logo.jpeg" alt="Company Logo" class="company-logo">
+                <div class="card-content">
+                    <div class="card-intro">
+                        <h3 class="company-name">DisinfoLab</h3>
+                        <p class="job-role">Software Engineer Intern</p>
+                    </div>
+                    <p class="date-location">Oct 2022 - May 2023 | Williamsburg, VA</p>
+                    <p>
+                        Collaborated with faculty to build machine learning pipelines for real-time disinformation detection 
+                        on Twitter. Developed a full-stack web app using React and a RESTful API, allowing users to assess 
+                        Twitter account credibility interactively.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
