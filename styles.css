@@ -25,7 +25,7 @@ body {
     justify-content: flex-start;
     align-items: flex-end;
     height: 60px;
-    width: 50%; /* Default width for mobile */
+    width: 95%; /* Default width for mobile */
     margin: 0 auto;
     background-color: #f6f9fc;
     color: black;
@@ -37,14 +37,14 @@ body {
 }
 
 /* Media query for larger screens (laptops and desktops) */
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     #main_container {
         width: 50%;
     }
     #nav-bar {
         width: 50%;
     }
-} */
+}
 
 #intro {
     display: flex;
