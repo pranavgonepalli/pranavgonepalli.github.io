@@ -41,7 +41,7 @@ The extraction script outputs a basic JSON skeleton with contact info parsed aut
 ├── scripts/
 │   └── extract_resume.py   # PDF → JSON extraction utility
 ├── images/
-│   ├── profile_pic.auto    # Profile photo
+│   ├── profile_photo.jpg    # Profile photo
 │   ├── microstrategy_logo.png
 │   └── ibm_logo.webp
 └── Pranav_Resume_Updated.pdf

@@ -54,7 +54,7 @@ def parse_resume(text: str) -> dict:
         "linkedin": "",
         "github": "",
         "resumePdf": "Pranav_Resume_Updated.pdf",
-        "profileImage": "images/profile_pic.auto",
+        "profileImage": "images/profile_photo.jpg",
         "about": "",
         "experience": [],
         "projects": [],
