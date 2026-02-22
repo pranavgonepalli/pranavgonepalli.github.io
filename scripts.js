@@ -32,9 +32,6 @@
 
     const highlights = [
         { label: 'AWS Certified', bold: false },
-        { label: '90% faster', bold: true, sub: 'dashboard creation' },
-        { label: '52,000+', bold: true, sub: 'files processed' },
-        { label: 'ICPC 1st Place', bold: false },
     ];
     const hlContainer = document.getElementById('hero-highlights');
     highlights.forEach(h => {
