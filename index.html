@@ -3,117 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranav Gonepalli — Software Engineer</title>
+    <meta name="description" content="Pranav Gonepalli — Software Engineer at Capital One. Portfolio showcasing experience in enterprise platforms, AI applications, and cloud architecture.">
+    <meta property="og:title" content="Pranav Gonepalli — Software Engineer">
+    <meta property="og:description" content="Software Engineer at Capital One. AWS Certified Solutions Architect. William & Mary CS '24.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pranavgonepalli.github.io">
+    <meta property="og:image" content="https://pranavgonepalli.github.io/images/profile_pic.auto">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%232563eb' rx='20' width='100' height='100'/><text x='50' y='68' font-size='50' font-family='Inter,sans-serif' font-weight='700' fill='white' text-anchor='middle'>PG</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script>
-    <title>Pranav Gonepalli</title>
 </head>
 <body>
-    <div id="nav-bar">
-        <a href="#main_container">PG</a>
-        <a href="#about" style="margin-left: auto;">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact_me">Contact Me</a>
-    </div>
-    <div id="main_container">
-        <div id="intro">
-            <div style="display: flex; flex-direction: column; gap: 0rem;">
-                <h1>Hello, I'm Pranav.</h1>
-                <h3 style="margin-top: -1rem;">A software engineer that enjoys building things.</h3>
-            </div>
-            <p style="font-size: 1.2rem;">
-                Welcome to my website! Take a look around to see the projects I've worked on, 
-                the skills I've developed, and what I've been up to recently.
-            </p>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">PG</a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-        <!-- <span class="section-anchor" id="about-anchor"></span> -->
-        <div id="about">
-            <h2>About Me</h2>
-            <div class="image-container image-desktop image-mobile">
-                <img src="images/profile_pic.auto" alt="Pranav Gonepalli" id="me-image">
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        Hey there! I'm Pranav, a software developer with a passion for turning ideas into user-friendly, 
-                        efficient applications. I've worked on projects ranging from natural language chatbots to 
-                        full-stack web apps. Whether it's optimizing workflows or solving complex problems, I love diving 
-                        into challenges and coming up with creative solutions. <br><br>
-                        Currently, I'm a senior at the College of William & Mary, graduating in December 2024. Outside of 
-                        coding, I'm always exploring new tech, playing games, or just hanging out with friends. Thanks for 
-                        stopping by and feel free to check out my work!
-                    </p>
-                </div>
-                <div class="image-container image-desktop">
-                    <img src="images/profile_pic.auto" alt="Pranav Gonepalli" id="me-image">
+    </nav>
+
+    <main>
+        <!-- Hero -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <p class="hero-greeting">Hi, I'm</p>
+                <h1 class="hero-name" id="hero-name"></h1>
+                <p class="hero-title" id="hero-title"></p>
+                <p class="hero-headline" id="hero-headline"></p>
+                <div class="hero-highlights" id="hero-highlights"></div>
+                <div class="hero-cta">
+                    <a href="#experience" class="btn btn-primary">View My Work</a>
+                    <a href="Pranav_Resume_Updated.pdf" class="btn btn-outline" id="hero-resume-btn" download>Download Resume</a>
                 </div>
             </div>
-        </div>
-        <div id="experience">
-            <h2>Experience</h2>
-            <div class="experience-card">
-                <img src="images/microstrategy_logo.png" alt="Company Logo" class="company-logo desktop-logo">
-                <div class="card-content">
-                    <div style="display: flex; flex-direction: row;">
-                        <div class="card-intro">
-                            <h3 class="company-name">MicroStrategy</h3>
-                            <p class="job-role">Software Engineer Intern</p>
-                        </div>
-                        <img src="images/microstrategy_logo.png" alt="Company Logo" class="company-logo mobile-logo">
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-layout">
+                    <div class="about-image">
+                        <img src="images/profile_pic.auto" alt="Pranav Gonepalli" id="about-img">
                     </div>
-                    <p class="date-location">May 2024 - Aug 2024 | Tysons, VA</p>
-                    <p>
-                        Developed a natural language chatbot for Auto Dashboard using React, Node.js, and OpenAI, 
-                        enabling automated dashboard creation. Built features like multi-page generation, dynamic 
-                        layouts, and design customization, cutting creation time by 90%.
-                    </p>
+                    <div class="about-text" id="about-text"></div>
                 </div>
             </div>
-            <div class="experience-card">
-                <img src="images/ibm_logo.webp" alt="Company Logo" class="company-logo desktop-logo">
-                <div class="card-content">
-                    <div style="display: flex; flex-direction: row;">
-                        <div class="card-intro">
-                            <h3 class="company-name">IBM</h3>
-                            <p class="job-role">Software Engineer Intern</p>
-                        </div>
-                        <img src="images/ibm_logo.webp" alt="Company Logo" class="company-logo mobile-logo">
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div id="experience-list" class="experience-list"></div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div id="projects-grid" class="projects-grid"></div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <div id="skills-grid" class="skills-grid"></div>
+            </div>
+        </section>
+
+        <!-- Resume -->
+        <section id="resume" class="section">
+            <div class="container">
+                <h2 class="section-title">Resume</h2>
+                <div class="resume-section">
+                    <div class="resume-embed" id="resume-embed"></div>
+                    <div class="resume-download">
+                        <a href="Pranav_Resume_Updated.pdf" class="btn btn-primary" id="resume-download-btn" download>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                            Download PDF
+                        </a>
                     </div>
-                    <p class="date-location">Oct 2023 - Dec 2023 | Washington, D.C.</p>
-                    <p>
-                        Used AWS Lambda and Docker to efficiently extract and manage JSON data from Hyperscience documents. 
-                        Developed a script to analyze 52,000+ JSON files, reducing processing time from months to minutes.
-                    </p>
                 </div>
             </div>
-            <div class="experience-card">
-                <img src="images/disinfolab_logo.jpeg" alt="Company Logo" class="company-logo desktop-logo">
-                <div class="card-content">
-                    <div style="display: flex; flex-direction: row;">
-                        <div class="card-intro">
-                            <h3 class="company-name">DisinfoLab</h3>
-                            <p class="job-role">Software Engineer Intern</p>
-                        </div>
-                        <img src="images/disinfolab_logo.jpeg" alt="Company Logo" class="company-logo mobile-logo">
-                    </div>
-                    <p class="date-location">Oct 2022 - May 2023 | Williamsburg, VA</p>
-                    <p>
-                        Collaborated with faculty to build machine learning pipelines for real-time disinformation detection 
-                        on Twitter. Developed a full-stack web app using React and a RESTful API, allowing users to assess 
-                        Twitter account credibility interactively.
-                    </p>
-                </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="contact-intro">Interested in working together? Feel free to reach out.</p>
+                <div id="contact-links" class="contact-links"></div>
             </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="footer-year"></span> Pranav Gonepalli</p>
         </div>
-    </div>
-    <div class="popup-overlay">
-        <div class="popup-content">
-          <span class="close-popup">&times;</span>
-          <div id="popup-info"></div>
-        </div>
-      </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
