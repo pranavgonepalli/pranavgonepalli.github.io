@@ -1,0 +1,88 @@
+{
+  "name": "Pranav Gonepalli",
+  "title": "Software Engineer",
+  "headline": "Building enterprise security platforms at Capital One.",
+  "phone": "202-748-1494",
+  "email": "pranavgonepalli@gmail.com",
+  "linkedin": "https://linkedin.com/in/pranav-gonepalli",
+  "github": "https://github.com/pranavgonepalli",
+  "resumePdf": "Pranav_Resume_Updated.pdf",
+  "profileImage": "images/profile_pic.auto",
+  "about": "Software engineer at Capital One, building and maintaining enterprise security platforms using Go and AWS. I hold a B.S. in Computer Science from William & Mary and am an AWS Certified Solutions Architect. My experience spans enterprise software, AI-powered applications, and high-performance data systems, with previous roles at MicroStrategy and IBM.",
+  "experience": [
+    {
+      "company": "Capital One",
+      "role": "Software Engineer",
+      "dates": "Feb 2025 – Present",
+      "location": "McLean, VA",
+      "bullets": [
+        "Engineered and maintained Chamber of Secrets, Capital One's enterprise secrets management platform, using Go — enabling secure secret creation, rotation, deletion, and access across engineering teams.",
+        "Applied secure-by-design principles and enforced security invariants across service layers, strengthening authentication, access control, and data protection workflows.",
+        "Implemented backend enhancements and resolved high-priority production issues, improving platform reliability, diagnosability, and operational stability while reducing support load.",
+        "Leveraged AWS Secrets Manager and CloudWatch to improve observability, auditability, and threat detection across the secret lifecycle.",
+        "Streamlined CI/CD pipelines using Jenkins and GitHub, enabling safer, faster, and more consistent deployments.",
+        "Contributed to React-based frontend improvements and developer documentation, improving usability, accessibility, and self-service adoption."
+      ]
+    },
+    {
+      "company": "MicroStrategy",
+      "role": "AI Software Engineer Intern",
+      "dates": "May 2024 – Aug 2024",
+      "location": "Tysons, VA",
+      "bullets": [
+        "Built an AI-powered natural language chatbot for Auto Dashboard using React, Node.js, and OpenAI, enabling automated dashboard generation.",
+        "Designed and implemented dynamic multi-page SPA workflows, improving dashboard creation time by 90%.",
+        "Developed responsive UI components and data flows using modern React patterns, improving user experience and performance.",
+        "Integrated frontend with RESTful APIs and asynchronous data pipelines for real-time dashboard rendering."
+      ]
+    },
+    {
+      "company": "IBM",
+      "role": "Software Engineer Intern",
+      "dates": "Oct 2023 – Dec 2023",
+      "location": "Washington, D.C.",
+      "bullets": [
+        "Built AWS Lambda-based pipelines to securely process and extract structured data from Hyperscience documents.",
+        "Containerized workloads with Docker to improve deployment consistency and system reliability.",
+        "Developed high-performance data processing scripts that analyzed 52,000+ JSON files, reducing processing time from months to minutes."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Interactive SBOM Analyzer",
+      "tech": ["JavaScript", "Python", "React", "Django", "D3.js"],
+      "bullets": [
+        "Developed a full-stack security analysis platform to visualize SPDX and CycloneDX SBOMs as interactive dependency trees.",
+        "Built a React single-page application with dynamic rendering of deeply nested dependency graphs.",
+        "Implemented backend parsing pipelines to surface transitive vulnerabilities and license risks for security teams.",
+        "Improved software supply chain visibility and accelerated vulnerability triage workflows."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "William & Mary",
+      "degree": "Bachelor of Science in Computer Science",
+      "dates": "Sep 2021 – Dec 2024",
+      "location": "Williamsburg, VA"
+    }
+  ],
+  "certifications": [
+    "AWS Certified Solutions Architect – Associate"
+  ],
+  "skills": {
+    "Languages": ["Python", "Go", "Java", "C", "HTML/CSS", "JavaScript", "TypeScript", "SQL"],
+    "Technologies & Frameworks": ["AWS", "React", "Node.js", "REST APIs", "GitHub", "Jenkins", "Docker", "LangChain"],
+    "Developer Tools": ["VS Code", "Eclipse", "Android Studio"]
+  },
+  "competitions": [
+    {
+      "name": "International Collegiate Programming Contest (ICPC)",
+      "event": "NA Big South 2023 – Division 2",
+      "date": "Feb 2024",
+      "team": "Team Baffled",
+      "achievement": "Achieved 1st place on-site, 3rd place in the Mid-Atlantic region, and 5th place overall conference."
+    }
+  ]
+}
